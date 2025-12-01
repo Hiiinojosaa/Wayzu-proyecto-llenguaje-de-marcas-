@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAYZU - Inicio</title>
+
+    <link rel="stylesheet" href="CSS/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="hero">
+        <!-- CABECERA -->
+        <header class="hero-header">
+            <div class="logo">WAYZU</div>
+
+            <nav class="nav-menu">
+                <a href="destinos.html">Destinos</a>
+                <a href="destinos.html#nosotros">Nosotros</a>
+                <a href="destinos.html#contacto">Contacto</a>
+            </nav>
+        </header>
+
+        <div class="hero-content">
+            <!-- COLUMNA IZQUIERDA -->
+            <div class="hero-left">
+                <h1>Tu próximo viaje,<br>más simple que nunca.</h1>
+                <p>Paquetes con vuelo + hotel + actividades incluidas.</p>
+
+                <!-- BOTÓN + DESPLEGABLE -->
+                <button id="buscar-btn" class="btn-primary">Buscar viaje</button>
+
+                <div id="destinos-menu" class="dropdown-menu">
+                    <a href="DESTINOS/egipto.html">Egipto</a>
+                    <a href="DESTINOS/japon.html">Japón</a>
+                    <a href="DESTINOS/madagascar.html">Madagascar</a>
+                    <a href="DESTINOS/paris.html">París</a>
+                    <a href="DESTINOS/tailandia.html">Tailandia</a>
+                    <a href="DESTINOS/usa.html">Estados Unidos</a>
+                    <a href="DESTINOS/india.html">India</a>
+                    <a href="DESTINOS/antartida.html">Antártida</a>
+                    <a href="DESTINOS/pascua.html">Isla de Pascua</a>
+                </div>
+            </div>
+
+            <!-- COLUMNA DERECHA: TARJETA -->
+            <div class="hero-right">
+                <div class="destination-card">
+                    <img src="https://res.cloudinary.com/rainforest-cruises/image/upload/c_scale,w_720,h_480,dpr_1.25/c_fill,g_auto/f_auto,q_auto/v1748259547/Antarctic-Peninsula_1007552b48.jpg?_i=AA" alt="Antártida">
+
+                    <h3>Antártida</h3>
+                    <p>Hotel + Actividades + Guía</p>
+
+                    <a href="reserva.html" class="btn-primary full">Reservar viaje</a>
+                    <a href="aciegas.html" class="btn-secondary full">Destino a ciegas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS SOLO PARA EL DESPLEGABLE -->
+    <script>
+        const btnBuscar = document.getElementById('buscar-btn');
+        const menu = document.getElementById('destinos-menu');
+
+        btnBuscar.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+
+        // Cerrar el menú si se hace click fuera
+        document.addEventListener('click', (e) => {
+            if (!btnBuscar.contains(e.target) && !menu.contains(e.target)) {
+                menu.classList.remove('show');
+            }
+        });
+    </script>
+
+</body>
+</html>
+

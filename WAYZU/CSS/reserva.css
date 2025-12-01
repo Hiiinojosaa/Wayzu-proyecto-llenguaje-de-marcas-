@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #eaeaea;
+    padding: 20px;
+}
+
+/* CONTENEDOR CENTRAL */
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* TARJETA */
+.card {
+    width: 100%;
+    max-width: 1200px;
+    height: 95vh;
+    background-image: url('https://www.10wallpaper.com/wallpaper/1280x960/1401/sky_altitude_clouds_airplane-HD_Photo_Wallpaper_1280x960.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    border: 3px solid #1ca3ff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* OSCURECER IMAGEN */
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    border-radius: 25px;
+}
+
+/* CONTENIDO */
+.card-left,
+.card-right,
+.divider,
+.slogan,
+.footer {
+    position: relative;
+    z-index: 2;
+}
+
+/* BLOQUE IZQUIERDA */
+.card-left h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+    margin-right: 80px;
+}
+
+/* LÍNEA VERTICAL */
+.divider {
+    width: 2px;
+    height: 150px;
+    background: white;
+    margin-right: 80px;
+}
+
+/* BLOQUE DERECHA */
+.card-right p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* SLOGAN CENTRADO ABAJO */
+.slogan {
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+/* FOOTER ABAJO A LA DERECHA */
+.footer {
+    position: absolute;
+    bottom: 25px;
+    right: 35px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer span {
+    font-weight: 400;
+}

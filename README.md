@@ -18,31 +18,6 @@ DESTINOS-NOSOTROS-CONTACTO (estos tres botonoes llevan al mismo sitio, una venta
 
 Tecnologías Utilizadas: Lenguaje o framework (FIGMA)
 
-
-Herramientas utilizadas
-<img src= → Código imágenes + LINK
-
-
-
-<link href= → Código fuente + LINK ["https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet"]
-
-
-
-<script>
-        const btnBuscar = document.getElementById('buscar-btn');
-        const menu = document.getElementById('destinos-menu');
-
-        btnBuscar.addEventListener('click', () => {
-            menu.classList.toggle('show');
-        });
-
-        document.addEventListener('click', (e) => {
-            if (!btnBuscar.contains(e.target) && !menu.contains(e.target)) {
-                menu.classList.remove('show');
-            }
-        });
-    </script>
-
 👤 Autor
 
 Luis Ruiz Hinojosa

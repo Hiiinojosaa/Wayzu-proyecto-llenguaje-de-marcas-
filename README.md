@@ -16,7 +16,7 @@ DESTINOS-NOSOTROS-CONTACTO (estos tres botonoes llevan al mismo sitio, una venta
 - Un botón que dice "viaje a ciega", este botón nos lleva a una ventana específica y esta creado para esas personas aventureras.
 - Un botón que dice RESERVAR, el cual siempre que aparezca va a mostrar nuestra tarjeta de contacto.
 
-Tecnologías Utilizadas: Lenguaje o framework (FIGMA)
+Tecnologías Utilizadas: Lenguaje o framework
 
 👤 Autor
 

@@ -3,7 +3,6 @@ WAYZU
 Este proyecto consiste básicamente en una Landing que ofrece paquetes de viajes con vuelo, hotel y activiades. 
 Su funciones son principalmente informar sobre los servicios y establecer un negocio online (estatico).
 
-Acceso al Proyecto
 El proyecto no es instalable y solo puede visualizarse de forma privada mediante una dirección IP específica.
 Si necesitas acceso, puedes copiar esta carpeta y abrirla en Visual Studio Code.
 
